@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        background: red;
+        padding-right: 20px;
+        padding-left: 30px;
+        padding-top: 25px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 20px;
+
+        margin-bottom: 30px;
+        border: 1px solid black;
+        transition: transform 3s;
+      }
+      .box:hover {
+        /* width: 300px;
+        height: 400px; */
+        background-color: blue;
+        /* font-size: 50px; */
+        transform: rotate(180deg);
+      }
+      .container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      button {
+        background-color: blue;
+        color: #fff;
+        padding: 10px 20px;
+      }
+
+      button:hover {
+        background-color: #fff;
+        border-radius: 10px;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <button>submit</button>
+    <div class="container">
+      <div class="box">
+        1
+        <h1></h1>
+        <p></p>
+      </div>
+      <div class="box">
+        2
+        <img />
+      </div>
+      <div class="box">
+        3
+        <a></a>
+        <a></a>
+        <a></a>
+        <a></a>
+        <a></a>
+      </div>
+
+      <div class="box">4</div>
+      <div class="box">
+        3
+        <a></a>
+        <a></a>
+        <a></a>
+        <a></a>
+        <a></a>
+      </div>
+
+      <div class="box">4</div>
+      <div class="box">
+        3
+        <a>hv jnmb,km</a>
+        <a></a>
+        <a></a>
+        <a></a>
+        <a></a>
+      </div>
+
+      <div class="box">4</div>
+      <div class="box">
+        3
+        <a></a>
+        <a></a>
+        <a></a>
+        <a></a>
+        <a></a>
+      </div>
+
+      <div class="box">4</div>
+    </div>
+  </body>
+</html>

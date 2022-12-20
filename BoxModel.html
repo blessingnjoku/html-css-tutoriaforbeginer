@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Css/style.css" />
+    <title>Box model</title>
+    <style>
+      .box {
+        width: 300px;
+        height: 200px;
+        background: red;
+        padding-right: 20px;
+        padding-left: 30px;
+        padding-top: 25px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 20px;
+        margin-bottom: 50px;
+        margin-left: 50px;
+        border: 1px solid black;
+        margin-top: 80px;
+        margin-right: 50px;
+        /* float: right; */
+        /* display: none; */
+      }
+      #container {
+        width: 400px;
+        height: 300px;
+        border-radius: 10px;
+        background-color: gray;
+        position: relative;
+      }
+      .child-div {
+        width: 200px;
+        height: 100px;
+        background-color: black;
+        position: absolute;
+        top: 30px;
+        /* left: 50px; */
+        right: -50px;
+      }
+      .box > p {
+        font-size: 15px;
+        color: #fff;
+        line-height: 20px;
+        letter-spacing: 10px;
+        text-decoration: line-through;
+      }
+      .fixed-p {
+        width: 50px;
+        height: 50px;
+        background-color: green;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        color: #fff;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      nav {
+        background-color: blue;
+        height: 50px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+        margin-bottom: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav></nav>
+    <div class="box">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore hic
+        ullam eligendi veritatis dolor tempora amet reprehenderit eos cumque
+        libero cupiditate dolorem fugit nihil aperiam maxime necessitatibus
+        recusandae, ex ratione?
+        <span></span>
+      </p>
+      <span></span>
+    </div>
+    <div class="fixed-p">chat</div>
+
+    <div id="container">
+      <div class="child-div"></div>
+    </div>
+    <div>
+      <p>Why choose us</p>
+    </div>
+
+    <div></div>
+    <div class="box">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore hic
+        ullam eligendi veritatis dolor tempora amet reprehenderit eos cumque
+        libero cupiditate dolorem fugit nihil aperiam maxime necessitatibus
+        recusandae, ex ratione?
+        <span></span>
+      </p>
+      <span></span>
+    </div>
+  </body>
+</html>
